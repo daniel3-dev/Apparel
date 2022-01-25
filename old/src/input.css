@@ -1,0 +1,12 @@
+@font-face {
+  font-family: kalmansk;
+  src: url("/Kalmansk-Regular.otf");
+}
+
+.kalmansk {
+  font-family: "kalmansk", sans-serif;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

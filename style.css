@@ -1,0 +1,115 @@
+@font-face {
+  font-family: okta;
+  src: url("/fonts/OktaNeue-Regular.woff2");
+}
+
+@font-face {
+  font-family: oktaBold;
+  src: url("/fonts/OktaNeue-SemiBold.woff2");
+}
+
+@font-face {
+  font-family: oktaHeavy;
+  src: url("/fonts/OktaNeue-Heavy.woff2");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  border: none;
+}
+
+html,
+body {
+  font-family: "okta", sans-serif;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+
+  position: absolute;
+  color: #ffe5db;
+}
+
+.logo {
+  font-family: "oktaHeavy", sans-serif;
+  font-size: 3rem;
+}
+
+.nav-right {
+  display: flex;
+}
+
+.nav-right p {
+  margin-left: 4vw;
+  font-family: "oktaBold", sans-serif;
+}
+
+.one {
+  background-color: #3d0b00;
+  width: 100vw;
+  height: 100vh;
+  color: #ffe5db;
+  display: flex;
+}
+
+.one-left {
+  width: 70%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+}
+
+.splash {
+  background-image: url("img/splash.png");
+  /*background-color: #00a5dd;*/
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 50%;
+  height: 80%;
+  margin: 0 auto;
+  bottom: 0;
+  position: relative;
+}
+
+.button-container {
+  position: absolute;
+  right: 0;
+  top: 85%;
+  display: flex;
+}
+
+.neon-green {
+  background-color: #d5ff2c;
+  font-family: "oktaHeavy", sans-serif;
+  padding: 1vw;
+  font-size: 1rem;
+}
+
+.addon {
+  background-color: #fff;
+  color: #000;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  padding: 1vw;
+}
+
+.one-right {
+  background-color: #fff3ed;
+  color: #0b0b0b;
+  width: 30%;
+}
+
+.one-right-inner {
+  background-color: red;
+  width: 80%;
+  margin: 0 auto;
+}
