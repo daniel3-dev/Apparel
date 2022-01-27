@@ -109,7 +109,45 @@ nav {
 }
 
 .one-right-inner {
-  background-color: red;
   width: 80%;
   margin: 0 auto;
+  margin-top: 3vh;
+}
+
+.one-right-inner input {
+  border: none;
+  background-color: #fff3ed;
+  border-bottom: 2px solid #ff6338;
+  padding-bottom: 1vh;
+  width: 30%;
+}
+
+.one-right-inner ::placeholder {
+  opacity: 1;
+  color: #000;
+  font-family: "oktaBold", sans-serif;
+  font-size: 1rem;
+}
+
+.one-right-inner input[type="text"] {
+  color: #000;
+  font-family: "oktaBold", sans-serif;
+  font-size: 1rem;
+}
+
+.one-right-inner .fa-search {
+  border-bottom: 2px solid #ff6338;
+  padding-right: 1vw;
+}
+
+.search {
+  display: flex;
+}
+
+.top-row {
+  display: flex;
+}
+
+.bag-container {
+  display: flex;
 }
