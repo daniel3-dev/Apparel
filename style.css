@@ -160,3 +160,25 @@ nav {
   background-color: #3d0b00;
   margin: 0 0.5vw 0 0.5vw;
 }
+
+.one-right-one {
+  width: 90%;
+}
+
+.one-right-one h1 {
+  font-family: "oktaBold", sans-serif;
+  margin-top: 10vh;
+}
+
+.one-right img {
+  width: 75%;
+  height: 20vh;
+}
+
+.temp-container {
+  width: 75%;
+  height: 20vh;
+  background-image: url("img/one-right-one.jpg");
+  background-size: cover;
+  background-position: center;
+}
