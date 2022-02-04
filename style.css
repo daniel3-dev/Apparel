@@ -166,7 +166,7 @@ nav {
 }
 
 .one-right-one h1 {
-  font-family: "oktaBold", sans-serif;
+  font-family: "oktaHeavy", sans-serif;
   margin-top: 10vh;
 }
 
@@ -181,4 +181,5 @@ nav {
   background-image: url("img/one-right-one.jpg");
   background-size: cover;
   background-position: center;
+  margin-top: 1vw;
 }
