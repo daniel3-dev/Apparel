@@ -13,55 +13,60 @@
   </head>
   <body>
     <!--
-          TODO
-            - Button hover effects
-            x White dot in splash?
-            - Add nav padding
-            - Work on responsiveness
-            - Arrange CSS in order of appearance
-            - Make 'display flex' class
-            - Organise CSS w/ comments
-            - Choose better fonts
-      -->
-    <nav>
-      <div class="nav-left">
-        <p class="logo">Apparel</p>
-      </div>
-      <div class="nav-right">
-        <p>NEW ARRIVALS</p>
-        <p>SHOP</p>
-        <p>SALE</p>
-        <p>JOURNAL</p>
+      TODO
+        - Add film grain to section one
+        - Compress images and video
+        - Add mosaic overlay
+        - Hide scrollbar on safari
+
+        Started site overhaul
+    -->
+    <nav class="flex">
+      <h1 class="logo">Apparel</h1>
+      <div class="nav-right flex">
+        <p>Clothing</p>
+        <p>Shoes</p>
+        <p>Accessories</p>
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <i class="fa-solid fa-bag-shopping"></i>
       </div>
     </nav>
     <section class="one">
-      <div class="one-left">
-        <div class="splash">
-          <div class="button-container">
-            <button class="neon-green">START SHOPPING</button>
-            <div class="addon">
-              <i class="fas fa-long-arrow-alt-right"></i>
-            </div>
+      <div class="grid">
+        <div class="item pos-1">
+          <div class="img">
+            <video src="img/mosaic1.mp4" autoplay loop muted></video>
           </div>
         </div>
-      </div>
-      <div class="one-right">
-        <div class="one-right-inner">
-          <div class="top-row">
-            <div class="search">
-              <i class="fas fa-search"></i>
-              <input type="text" name="search" placeholder="SEARCH" />
-            </div>
-            <div class="bag-container">
-              <p>CART</p>
-              <div class="centre"></div>
-              <p>0</p>
-            </div>
-          </div>
-          <div class="one-right-one">
-            <h1>CLOTHES ARE THE SPIRIT OF FASHION</h1>
-            <div class="temp-container"></div>
-          </div>
+        <div class="item pos-2">
+          <div
+            class="img"
+            style="background-image: url('img/mosaic2.jpg')"
+          ></div>
+        </div>
+        <div class="item pos-3">
+          <div
+            class="img"
+            style="background-image: url('img/mosaic3.jpg')"
+          ></div>
+        </div>
+        <div class="item pos-4">
+          <div
+            class="img"
+            style="background-image: url('img/mosaic4.jpg')"
+          ></div>
+        </div>
+        <div class="item pos-5">
+          <div
+            class="img"
+            style="background-image: url('img/mosaic5.jpg')"
+          ></div>
+        </div>
+        <div class="item pos-6">
+          <div
+            class="img"
+            style="background-image: url('img/mosaic6.jpg')"
+          ></div>
         </div>
       </div>
     </section>

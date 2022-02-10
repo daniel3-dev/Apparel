@@ -1,185 +1,137 @@
+/*############################### Custom Fonts ################################*/
+
 @font-face {
-  font-family: okta;
-  src: url("/fonts/OktaNeue-Regular.woff2");
+  font-family: monument;
+  src: url('/fonts/Monument.otf');
 }
 
 @font-face {
-  font-family: oktaBold;
-  src: url("/fonts/OktaNeue-SemiBold.woff2");
+  font-family: monumentBold;
+  src: url('/fonts/MonumentBold.otf');
 }
 
 @font-face {
-  font-family: oktaHeavy;
-  src: url("/fonts/OktaNeue-Heavy.woff2");
+  font-family: neue;
+  src: url('/fonts/NeueMontreal.otf');
 }
+
+/*################################ Base Styles ################################*/
 
 * {
   margin: 0;
   padding: 0;
 }
 
-button {
-  border: none;
-}
-
 html,
 body {
-  font-family: "okta", sans-serif;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  font-family: 'neue', sans-serif;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 nav {
-  display: flex;
+  position: absolute;
+  color: #fff;
+  padding: 1rem;
   align-items: center;
   justify-content: space-between;
-  width: 70%;
-
-  position: absolute;
-  color: #ffe5db;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  z-index: 9;
 }
 
+/*############################## Utility Classes ##############################*/
+
+.flex {
+  display: flex;
+}
+
+/*################################## Navbar ###################################*/
+
 .logo {
-  font-family: "oktaHeavy", sans-serif;
-  font-size: 3rem;
+  font-family: 'monumentBold', sans-serif;
 }
 
 .nav-right {
-  display: flex;
+  align-items: center;
 }
 
 .nav-right p {
-  margin-left: 4vw;
-  font-family: "oktaBold", sans-serif;
+  margin-left: 2vw;
 }
+
+.nav-right i {
+  color: #fff;
+  margin-left: 2vw;
+}
+
+/*################################ Section One ################################*/
 
 .one {
-  background-color: #3d0b00;
   width: 100vw;
   height: 100vh;
-  color: #ffe5db;
-  display: flex;
+  background-color: #000;
 }
 
-.one-left {
-  width: 70%;
-  height: 100%;
-  position: relative;
-  display: flex;
-  align-items: flex-end;
-}
+/*Background Mosaic*/
 
-.splash {
-  background-image: url("img/splash.png");
-  /*background-color: #00a5dd;*/
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 50%;
-  height: 80%;
-  margin: 0 auto;
-  bottom: 0;
-  position: relative;
-}
-
-.button-container {
+.grid {
+  pointer-events: none;
   position: absolute;
-  right: 0;
-  top: 85%;
-  display: flex;
+  width: 110%;
+  height: 110%;
+  top: -5%;
+  left: -5%;
+  display: grid;
+  grid-template-columns: repeat(50, 2%);
+  grid-template-rows: repeat(50, 2%);
 }
 
-.neon-green {
-  background-color: #d5ff2c;
-  font-family: "oktaHeavy", sans-serif;
-  padding: 1vw;
-  font-size: 1rem;
-}
-
-.addon {
-  background-color: #fff;
-  color: #000;
-  font-size: 2rem;
-  display: flex;
-  align-items: center;
-  padding: 1vw;
-}
-
-.one-right {
-  background-color: #fff3ed;
-  color: #0b0b0b;
-  width: 30%;
-}
-
-.one-right-inner {
-  width: 80%;
-  margin: 0 auto;
-  margin-top: 3vh;
-}
-
-.one-right-inner input {
-  border: none;
-  background-color: #fff3ed;
-  border-bottom: 2px solid #ff6338;
-  padding-bottom: 1vh;
-  width: 30%;
-}
-
-.one-right-inner ::placeholder {
-  opacity: 1;
-  color: #000;
-  font-family: "oktaBold", sans-serif;
-  font-size: 1rem;
-}
-
-.one-right-inner input[type="text"] {
-  color: #000;
-  font-family: "oktaBold", sans-serif;
-  font-size: 1rem;
-}
-
-.one-right-inner .fa-search {
-  border-bottom: 2px solid #ff6338;
-  padding-right: 1vw;
-}
-
-.search {
-  display: flex;
-}
-
-.top-row {
-  display: flex;
-}
-
-.bag-container {
-  display: flex;
-  border: 2px solid #3d0b00;
-  padding: 0.5vw;
-}
-
-.centre {
-  width: 2px;
+.grid .img {
+  position: relative;
+  width: 100%;
   height: 100%;
-  background-color: #3d0b00;
-  margin: 0 0.5vw 0 0.5vw;
-}
-
-.one-right-one {
-  width: 90%;
-}
-
-.one-right-one h1 {
-  font-family: "oktaHeavy", sans-serif;
-  margin-top: 10vh;
-}
-
-.one-right img {
-  width: 75%;
-  height: 20vh;
-}
-
-.temp-container {
-  width: 75%;
-  height: 20vh;
-  background-image: url("img/one-right-one.jpg");
   background-size: cover;
-  background-position: center;
-  margin-top: 1vw;
+  background-position: 50% 50%;
+}
+
+.grid video {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.item {
+  position: relative;
+}
+
+.pos-1 {
+  grid-area: 10/1/26/7;
+}
+
+.pos-2 {
+  grid-area: 1/18/9/27;
+}
+
+.pos-3 {
+  grid-area: 1/36/14/42;
+}
+
+.pos-4 {
+  grid-area: 13/11/32/18;
+}
+
+.pos-5 {
+  grid-area: 17/32/32/38;
+}
+
+.pos-6 {
+  grid-area: 20/46/28/51;
 }
