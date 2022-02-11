@@ -2,17 +2,17 @@
 
 @font-face {
   font-family: monument;
-  src: url('/fonts/Monument.otf');
+  src: url('fonts/Monument.otf');
 }
 
 @font-face {
   font-family: monumentBold;
-  src: url('/fonts/MonumentBold.otf');
+  src: url('fonts/MonumentBold.otf');
 }
 
 @font-face {
   font-family: neue;
-  src: url('/fonts/NeueMontreal.otf');
+  src: url('fonts/NeueMontreal.otf');
 }
 
 /*################################ Base Styles ################################*/
